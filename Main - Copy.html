@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nor's Kan anan</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="java.js"></script>
+  </head>
+  <body>
+
+    <h1>Nor's Kan anan</h1>
+      <nav>
+        <ul>
+          <a href="Main.html"><li>Home</li></a>
+          <a href="About.html"><li>About</li></a><span class="vl"></span>
+          &nbsp;&nbsp;
+          <button id="log" class="l_button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+          <span id="username"></span>
+          <label>
+        </ul>
+      </nav>
+      
+      <section class = "items">
+      
+          <div class="item" id="pinakbet1" style="display: none;">
+            <div class="pinakbet">
+              <div id="prod">
+                <h4  style="color: aliceblue;" class="price">P35</h4>
+                  <h4 style="color: aliceblue;"><br><br>Quantity
+                <button class="sub" onclick = "sub()">-</button>
+                <span id="q">&nbsp;1&nbsp;</span>
+                <button class="add" onclick = "add()">+</button><br></h4>
+                <p><b>Shipping To: <input id="int"></input></p><br>
+                <p>Shipping Fee: P35.00</p><br>
+                <hr class="dashed"><br>
+                <p>Total: P<span id="total">0</span></b></p>
+
+
+              </div>
+            
+            </div>
+            <h4>Pinakbet</h4>
+            <button class="item_button" id="btn1" onclick="cancel()">Cancel</button>
+          </div>
+          <div class="item" id="pinakbet">
+            <img src="recipe/pinakbet.jpg">
+            <h4>Pinakbet</h4>
+            <button class="item_button" id="btn" onclick="pinakbet()">Order</button>
+          </div>
+
+          <div class="item">
+            <img src="recipe/pancit.jpg">
+            <h4>Pancit</h4>
+            <button class="item_button" id="btn">Order</button>
+          </div>
+
+          <div class="item">
+              <img src="recipe/sitaw.jpg">
+              <h4>Minudong Sitaw</h4>
+              <button class="item_button" id="btn">Order</button>
+          </div>
+
+          <div class="item">
+              <img src="recipe/bihon.jpg">
+              <h4>Bihon</h4>
+              <button class="item_button" id="btn">Order</button>
+          </div>
+
+          <div class="item">
+              <img src="recipe/chapsui.jpg">
+              <h4>Chapsui</h4>
+              <button class="item_button" id="btn">Order</button>
+          </div>
+
+          <div class="item">
+              <img src="recipe/dinuguan.jpg">
+              <h4>Dinuguan</h4>
+              <button class="item_button" id="btn">Order</button>
+          </div>
+
+          <div class="item">
+              <img src="recipe/maranay.jpg">
+              <h4>Maranay</h4>
+              <button class="item_button" id="btn">Order</button>
+          </div>
+
+          <div class="item">
+              <img src="recipe/langka.jpg">
+              <h4>Ginataang Langka</h4>
+              <button class="item_button" id="btn">Order</button>
+          </div>
+
+          <div class="item">
+              <img src="recipe/lumpia.jpg">
+              <h4>Lumpia</h4>
+              <button class="item_button" id="btn">Order</button>
+          </div>
+
+          <div class="item">
+              <img src="recipe/minudo.jpg">
+              <h4>Minudo</h4>
+              <button class="item_button" id="btn">Order</button>
+          </div>
+
+          <div class="item">
+              <img src="recipe/maranay.jpg">
+              <h4>Maranay</h4>
+              <button class="item_button" id="btn">Order</button>
+          </div>
+
+          <div class="item">
+            <img src="recipe/bbq.jpg">
+            <h4>BBQ</h4>
+            <button class="item_button" id="btn">Order</button>
+        </div>
+      </section>
+      <div id="id01" class="modal">
+  
+        <form class="modal-content animate">
+          <div class="imgcontainer">
+            <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+            <h4 style="font-size: 20px;">Login</h4>
+          </div>
+      
+          <div class="container">
+            <label id="user" for="uname"><b>Username</b></label>
+            <input type="text" placeholder="Enter Username" name="uname" required>
+      
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+              
+            <button class="l_button" type="submit" onclick="document.getElementById('log').style.display='none';login()">Login</button>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+            <span class="psw">Don't have an Account? <a href="register.html">Register Here</a></span>
+          </div>
+        </form>
+      </div>
+
+      <footer>
+        <div>This website is for project purpose only all image use 
+          reserve for te actual owner. </div>
+      </footer>
+
+  </body>
+  </html>

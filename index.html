@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src = "script.js"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<div id="prod">
+    Quantity
+    <button onclick = "sub()">-</button>
+    <span id="q">&nbsp;&nbsp;</span>
+    <button onclick = "add()">+</button><br>
+    Shipping To: <b>Cagayan de Oro City</b><br>
+    Shipping Fee: <b>P69.00</b><br><br>
+</div>
+
+<div id="check" style="display: none;">
+    Ready to Checkout?<br>
+    Subtotal: <b>P<span id = "subtotal"></span></b><br>
+    Qty: <b><span id = "qty"></span></b><br>
+    Shipping fee: <b>P69.00</b><br>
+    Total: <b><span id = "total"></span></b></span>
+</div>
+<div id="check" style="display: none;">
+    YOUR ORDER<br><br>
+    Janspot Backpack
+    $<span id="price">0</span><br>
+    Quantity: <span id="qty"></span>&nbsp;|&nbsp;</span> Shipping Fee: $<span id="fee">0</span><br>
+
+    <b>Total: $<span id ="total">0</span></b>
+</div>
+
+<button id="buy" onclick="buy()">Buy</button>
+
+</body>
+</html>
