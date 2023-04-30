@@ -1,0 +1,473 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	box-sizing: border-box;
+}
+/*HEADING TITLE ibarra's kan anan SECTION*/
+
+.vl {
+	border-left: 2px solid grey;
+	height: 5px;
+}
+
+.dashed{
+	border-top: 3px dashed aliceblue;
+}
+
+h4{
+	font-family: sans-serif;
+}
+
+.price{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Lucida Sans',Geneva;
+	background-image: url(recipe/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	opacity: 90%;
+}
+
+
+h1{
+	text-align: center;
+	font-size: 90px;
+	font-family: 'Lucida Sans',Geneva;
+	color: wheat;
+	padding: 90px;
+	background-image: url(recipe/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	opacity: 90%;
+	text-shadow: 3px 3px 3px black;
+}
+/*NAVIGATION SECTION*/
+nav{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: wheat;
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+
+}
+.page{
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+}
+nav ul{
+	list-style: none;
+}
+nav ul a{
+	display: inline-block;
+	padding: 20px;
+	text-decoration: none;
+	color: #000;
+	transition: 0.2s ease-in;
+	font-size: 18px;
+}
+nav ul a:hover{
+	background-color: burlywood;
+	color: white;
+}
+
+/*FOOD LISTING DESIGN SECTION*/
+.items{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	padding: 30px 20px;
+	grid-column-gap: 20px;
+	grid-row-gap: 30px;
+}
+.sudan{
+	background-image: url(recipe/bg.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	padding: 50px 50px;
+	padding-top: 20px;
+	padding-bottom: 10px;
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	transition: 0.2s ease;
+	box-shadow: 1px 1px 1px 1px#000;
+}
+
+.item img{
+	width: 100%;
+	height: 300px;
+	object-fit: cover;
+	transition: 0.2s ease;
+	box-shadow: 1px 1px 1px 1px#000;
+}
+.item img:hover{
+	transform: scale(1.04);
+}
+.item h4{
+	padding: 5px;
+	text-align: center;
+	text-shadow: 1px 1px black;
+}
+
+p{
+	color: aliceblue;
+	text-shadow: .5px .5px black;
+	font-family: sans-serif;
+}
+
+.disabled{
+	padding: 5px 30px;
+	border: none;
+	outline: none;
+	background-color: grey;
+	color: black;
+	border-radius: 4px;
+	font-size: 20px;
+	display: block;
+	margin: 0 auto;
+}
+
+.pad{
+	padding: 5px 30px;
+}
+
+
+.add{
+	size: 10px;
+	background-color: burlywood;
+	color: white;
+	cursor: pointer;
+	font-size: 10px;
+	transition: 0.2s all;
+	padding: 5px 5px;
+
+}
+.sub{
+	size: 10px;
+	background-color: burlywood;
+	color: white;
+	cursor: pointer;
+	font-size: 10px;
+	transition: 0.2s all;
+	padding: 5px;
+	padding-inline: 6.4px;
+
+}
+.item_button{
+	padding: 5px 30px;
+	border: none;
+	outline: none;
+	background-color: burlywood;
+	color: white;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 20px;
+	display: block;
+	margin: 0 auto;
+	transition: 0.2s all;
+}
+.item button:hover{
+	transform: scale(1.04);
+}
+
+footer{
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Lucida Sans',Geneva;
+	color: white;
+	padding: 50px;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	opacity: 90%;
+}
+
+/*MEDIA SCREENING TO ADJUST IN DIFFERENT SCREEN DISPLAY*/
+@media screen and (max-width: 1000px){
+	.items{
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+@media screen and (max-width: 768px){
+	.items{
+		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+.popup{
+	position: absolute;
+	top: 60%;
+	left: 13%;
+	padding: 5px 10px;
+	
+	border-radius: 50%;
+	background-color: #f44336;
+}
+
+.icon{
+	position: fixed;
+	top: 90%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.icon{
+	display: block;
+	text-align: center;
+	padding: 5px;
+	transition: all 0.3s ease;
+	color: bisque;
+}
+
+.icon:hover{
+	opacity: 0.5;
+}
+
+.cartpic {
+	width: 20%;
+	cursor: pointer;
+	display: block;
+	padding: 20px;
+	text-decoration: none;
+	color: #000;
+	font-size: 18px;
+	
+}
+.cartpic:hover {
+	opacity: 0.8;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+  }
+  
+  /* Set a style for all buttons */
+  .l_button {
+	background-color: burlywood;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+  }
+  
+  .l_button:hover {
+	opacity: 0.8;
+  }
+  
+  /* Extra styles for the cancel button */
+  .cancelbtn {
+	width: auto;
+	padding: 10px 18px;
+	background-color: #f44336;
+  }
+  
+  /* Center the image and position the close button */
+  .imgcontainer {
+	text-align: center;
+	margin: 24px 0 12px 0;
+	position: relative;
+  }
+  
+  img.avatar {
+	width: 40%;
+	border-radius: 50%;
+  }
+  
+  .container {
+	padding: 16px;
+  }
+  
+  span.psw {
+	float: right;
+	padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+  .modal {
+	
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+	background-color: #fefefe;
+	margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+	border: 1px solid #888;
+	width: 30%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+  .close {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	color: #000;
+	font-size: 35px;
+	font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+	color: red;
+	cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+  .animate {
+	-webkit-animation: animatezoom 0.6s;
+	animation: animatezoom 0.6s
+  }
+  
+  @-webkit-keyframes animatezoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+  }
+	
+  @keyframes animatezoom {
+	from {transform: scale(0)} 
+	to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+  @media screen and (max-width: 300px) {
+	span.psw {
+	   display: block;
+	   float: none;
+	}
+	.cancelbtn {
+	   width: 100%;
+	}
+  }
+
+
+
+
+  /*ADD TO CART CSS*/
+
+  @import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+*, ::before, ::after { box-sizing: border-box; }
+body{
+  font-family:'Quicksand', sans-serif;
+  text-align:center;
+  line-height:1.5em;
+  background:#E0E4CC;
+ background: #69d2e7;
+ background: -moz-linear-gradient(-45deg, #69d2e7 0%, #a7dbd8 25%, #e0e4cc 46%, #e0e4cc 54%, #f38630 75%, #fa6900 100%);
+ background: -webkit-linear-gradient(-45deg, #69d2e7 0%,#a7dbd8 25%,#e0e4cc 46%,#e0e4cc 54%,#f38630 75%,#fa6900 100%);
+ background: linear-gradient(135deg, #69d2e7 0%,#a7dbd8 25%,#e0e4cc 46%,#e0e4cc 54%,#f38630 75%,#fa6900 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69d2e7', endColorstr='#fa6900',GradientType=1 );
+ }
+ hr {
+   border:none;
+   background:#E0E4CC;
+   height:1px;
+ /*   width:60%;
+   display:block;
+   margin-left:0; */
+ }
+ h1{
+	 margin: 12px;
+ }
+ .container {
+   max-width: 800px; 
+   margin: 1em auto; 
+   background:#FFF; 
+   padding:30px;
+   border-radius:5px;
+ }
+ .productcont {
+   display: flex; 
+ }
+ .product {
+   padding:1em; 
+   border:1px solid #E0E4CC; 
+   margin-right:1em; 
+   border-radius:5px;
+ }
+ .cart-container {
+   border:1px solid #E0E4CC;
+   border-radius:5px;
+   margin-top:1em;
+   padding:1em;
+ }
+ .cartbutton, input[type="submit"] { 
+	 border:1px solid #FA6900; 
+	 color:#fff; 
+	 background: #F38630; 
+	 padding:0.6em 1em;
+	 font-size:1em; 
+	 line-height:1; 
+	 border-radius: 1.2em;
+	 transition: color 0.2s ease-in-out, background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+ }
+ .cartbutton:hover, .cartbutton:focus, .cartbutton:active, input[type="submit"]:hover, input[type="submit"]:focus, input[type="submit"]:active {
+	 background: #A7DBD8;
+	 border-color:#69D2E7;
+	 color:#000;
+	 cursor: pointer;
+ }
+ table {
+   margin-bottom:1em;
+   border-collapse:collapse;
+ }
+ table td, table th {
+   text-align:left;
+   padding:0.25em 1em;
+   border-bottom:1px solid #E0E4CC;
+ }
+ #carttotals {
+   margin-right:0;
+   margin-left:auto;
+ }
+ .cart-buttons {
+   width:auto;
+   margin-right:0;
+   margin-left:auto;
+   display:flex;
+   justify-content:flex-end;
+   padding:1em 0;
+ }
+ #emptycart {
+   margin-right:1em;
+ }
+ table td:nth-last-child(1) {
+   text-align:right;
+ }
+ .message {
+   border-width: 1px 0px;
+   border-style:solid;
+   border-color:#A7DBD8;
+   color:#679996;
+   padding:0.5em 0;
+   margin:1em 0;
+ }
